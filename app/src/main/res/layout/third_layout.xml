@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e0e8">
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#0000"
+        >
+    </ListView>
+    <!--一般是设置android:weight属性的时候才使用,如果你的布局是按水平布局，
+    设置控件比例，就设置ndroid:layout_width=“0dp”,
+    然后就可以自己按照你所设置的比例进行显示;如果是竖直布局的话，
+    设置控件比例，android:layout_height=“0dp”-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type Something Here"
+            android:maxLines="2"/>
+        <!--android:layout_weight="1",一般是设置android:weight属性的时候才使用,如果你的布局是按水平布局，
+设置控件比例，就设置ndroid:layout_width=“0dp”,
+然后就可以自己按照你所设置的比例进行显示;如果是竖直布局的话，
+设置控件比例，android:layout_height=“0dp”-->
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+           />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+    <!--stretchColumns作用是tableLayout的第二列设为可扩展，
+如果列数没有布满整个屏幕，则其余空间都被第二列占据，自动拉伸已填充屏幕-->
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="帐号:"
+            />
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:hint="Input your account"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="密码:"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+    <!--增加复选框-->
+    <TableRow>
+        <CheckBox
+            android:id="@+id/remember_pass"
+            android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:layout_span="2"表示跨两行-->
+        <Button
+            android:id="@+id/button5"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="登录"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:layout_span="2"表示跨两行-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="加载对话框"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--android:layout_span="2"表示跨两行-->
+        <Button
+            android:id="@+id/button2"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="动态碎片加载"
+            />
+    </TableRow>
+
+</TableLayout>
